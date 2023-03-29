@@ -70,17 +70,4 @@ window.dataLayer.push({
 
 # Task
 
-To solve this problem we have to iterate trough the whole array and check in every object for the price. If the value of price is equal to 0, it means we are facing a sample object. We have to sum the quantity of all objects that have a value > 0. I order to do that we create a custom javascript function in Google Tag Manager, in which following Function is running:
-
-function sampleExclusion() {
- 
-  var count = 0  
-  
-  for (var i = 0; i < arr.length; i++) {
-        if (arr[i].price > 0) {
-          var q = parseInt(arr[i].quantity)
-          count = count + q;
-        }
-    }
-  return count
-}
+To solve this problem we have to iterate trough the whole array and check in every object for the price. If the value of price is equal to 0, it means we are facing a sample object. We have to sum the quantity of all objects that have a value > 0. I order to do that we create a custom javascript variable in Google Tag Manager, in which our javascript function is running.
