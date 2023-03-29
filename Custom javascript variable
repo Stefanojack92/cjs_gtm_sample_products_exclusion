@@ -1,0 +1,11 @@
+
+function sampleExclusion() {
+  var count = 0  
+  for (var i = 0; i < arr.length; i++) {
+        if (arr[i].price > 0) {
+          var q = parseInt(arr[i].quantity)
+          count = count + q;
+        }
+    }
+  return count
+}
